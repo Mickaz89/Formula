@@ -44,7 +44,7 @@ const getDriversProfile = (request, response) => {
   // 1 -> Select all users races 
   // 2 -> Select all lap_times WHERE lap_times.driverId = driverId AND lap_times.raceId = raceId
 
-  // What is a lap ? How can i calculate average lap time ? I don't know about Formula 
+  // What is a lap ? How can i calculate average lap time ? By time field or milliseconds field ? Is them equivalent ?
   //There is a table lap_times but there is also a field lap_times in results , what is the relation between us ?
 
 
@@ -73,6 +73,7 @@ const getSeasonsAllTimeRanking = (request, response) => {
   // Seasons all-time ranking: returns a list of seasons with the top 3 drivers in each season
 
   // What define a top driver ? 
+  // How many wins ? How manu best lap times ? It's not clear 
 
   pool.query(query, (error, results) => {
     if (error) {
